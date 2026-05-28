@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum JS - Operator Pembanding</title>
+</head>
+<body>
+    <h2>Dokumentasi Operator Pembanding</h2>
+    <div id="output-pembanding"></div>
+
+    <script>
+        let totalBelanja = 478750;
+        let minimalSultan = 500000;
+        let tipeMember = "PLATINUM";
+
+        // Implementasi Operator Pembanding
+        let cekPromoSultan = totalBelanja >= minimalSultan; // Lebih dari sama dengan
+        let cekMemberVip = (tipeMember === "PLATINUM"); // Cek kesamaan nilai & tipe data
+
+        document.getElementById("output-pembanding").innerHTML = `
+            <p>Total Belanjaan: Rp ${totalBelanja}</p>
+            <p>Apakah belanjaan mencapai batas minimal Rp ${minimalSultan}? <b>${cekPromoSultan}</b></p>
+            <p>Apakah pelanggan memiliki member PLATINUM? <b>${cekMemberVip}</b></p>
+        `;
+    </script>
+</body>
+</html>
